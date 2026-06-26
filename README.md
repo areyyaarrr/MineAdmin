@@ -37,3 +37,38 @@ python app.py
 ### Settings
 ![Settings](screenshots/settings.png)
 
+MineAdmin/
+├── app.py
+├── config.py
+├── requirements.txt
+├── routes/
+│   ├── dashboard.py
+│   ├── players.py
+│   ├── auth.py
+│   └── settings.py
+├── services/
+│   ├── minecraft.py
+│   ├── monitoring.py
+├── templates/
+│   ├── dashboard.html
+│   ├── players.html
+│   ├── login.html
+│   └── settings.html
+├── static/
+│   ├── css/
+│   ├── js/
+│   └── images/
+├── database/
+│   ├── models.py
+│   └── db.py
+└── screenshots/
+
+ Future Improvements
+
+    User authentication system
+
+    Dark mode
+
+    Server settings manager
+
+    Backup button
