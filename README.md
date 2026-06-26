@@ -22,3 +22,18 @@ git clone https://github.com/AmarOP99/MineAdmin.git
 cd MineAdmin
 pip install -r requirements.txt
 python app.py
+
+## 📸 Screenshots
+
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### Players
+![Players](screenshots/playerlist.png)
+
+### Login
+![Login](screenshots/login.png)
+
+### Settings
+![Settings](screenshots/settings.png)
+
