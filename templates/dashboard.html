@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MineAdmin Dashboard</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f4f4f4; }
+        h1 { color: #333; }
+        .card { background: #fff; padding: 20px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .stats { display: flex; gap: 20px; }
+        .stats div { flex: 1; background: #eee; padding: 10px; border-radius: 6px; text-align: center; }
+    </style>
+</head>
+<body>
+    <h1>MineAdmin Dashboard</h1>
+
+    <div class="card">
+        <h2>Server Status</h2>
+        {% if server.online %}
+            <p><strong>Online</strong></p>
+            <p>Players: {{ server.players }}/{{ server.max_players }}</p>
+            <p>Version: {{ server.version }}</p>
+            <p>MOTD: {{ server.motd }}</p>
+        {% else %}
+            <p><strong>Offline</strong></p>
+        {% endif %}
+    </div>
+
+    <div class="card">
+        <h2>System Stats</h2>
+        <div class="stats">
+            <div>CPU: {{ stats.cpu }}%</div>
+            <div>RAM: {{ stats.ram }}%</div>
+            <div>Disk: {{ stats.disk }}%</div>
+            <div>Net Sent: {{ stats.net }} bytes</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+Flask
+mcstatus
+psutil
+discord-webhook
+requests
+APScheduler

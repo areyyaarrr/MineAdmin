@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Server Settings</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f4f4f4; }
+        h1 { color: #333; }
+        form { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        label { display: block; margin-top: 10px; }
+        input, select { width: 100%; padding: 8px; margin-top: 5px; }
+        button { margin-top: 15px; padding: 10px 15px; background: #333; color: #fff; border: none; border-radius: 5px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>Server Settings</h1>
+    <form method="POST">
+        <label>MOTD:</label>
+        <input type="text" name="motd" placeholder="Message of the Day">
+
+        <label>Max Players:</label>
+        <input type="number" name="max_players" value="20">
+
+        <label>Whitelist:</label>
+        <select name="whitelist">
+            <option value="enabled">Enabled</option>
+            <option value="disabled">Disabled</option>
+        </select>
+
+        <button type="submit">Save Settings</button>
+    </form>
+</body>
+</html>
